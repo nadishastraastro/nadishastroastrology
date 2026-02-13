@@ -1619,7 +1619,63 @@ h5 {
   }
 }
 
+/* Rishis */
+.nadi-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
 
+.nadi-section h2 {
+  color: #1b4fa1;
+  margin-bottom: 15px;
+}
+
+/* Rishi Layout */
+.rishi-box {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.rishi-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+}
+
+.rishi-content h3 {
+  color: #0d3b8c;
+  margin-bottom: 10px;
+}
+
+/* Alternating Pattern */
+.left-image {
+  flex-direction: row;
+}
+
+.right-image {
+  flex-direction: row-reverse;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rishi-box {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .rishi-image img {
+    max-width: 100%;
+  }
+}
 
 
 
