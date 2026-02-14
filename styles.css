@@ -403,7 +403,7 @@ body {
   .nav-menu {
     display: flex;
     justify-content: center;
-    background-color: rgb(0,191,255);
+    background-color: rgb(65,105,225);
     gap: 30px;
     padding: 0;
     flex-wrap: wrap;
@@ -423,7 +423,7 @@ body {
    ======================================== */
 
 header {
-  background-color: rgb(0,191,255);
+  background-color: rgb(65,105,225);
   color: white;
   text-align: center;
   padding: 20px;
@@ -432,7 +432,7 @@ header {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: rgb(0,191,255);
+  background-color: rgb(65,105,225);
   color: white;
 }
 
@@ -1033,7 +1033,7 @@ h5 {
 }
 
 .footer {
-  background-color: rgb(0,191,255);
+  background-color: rgb(65,105,225);
   color: white;
   text-align: center;
   padding: 30px 20px;
@@ -1676,6 +1676,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
