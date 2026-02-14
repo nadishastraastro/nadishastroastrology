@@ -453,7 +453,7 @@ footer {
   gap: 20px;
   flex-wrap: wrap;
   margin: 10px 0;
-  background-color: white;
+  background-color: 	rgb(0,0,205);
   padding: 20px;
   width: 90%;
   max-width: 1200px;
@@ -1676,6 +1676,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
