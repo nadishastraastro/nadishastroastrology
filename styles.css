@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   padding-top: 120px;
   min-height: 100vh;
-  background-color: #e0ab0d;
+ /* background-color: #e0ab0d; */
 }
 
 /* HEADER FLEX LAYOUT */
@@ -1676,6 +1676,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
