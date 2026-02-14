@@ -518,7 +518,7 @@ footer {
 .button-message {
   font-size: 20px;
   font-weight: bold;
-  color: orangered;
+  color: white;
 }
 
 /* Second row: card links */
@@ -1677,6 +1677,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
