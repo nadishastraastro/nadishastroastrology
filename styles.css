@@ -592,80 +592,74 @@ footer {
   margin-top: 10px;
 }
 
+  /* Second content */
+
 .second-content {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 20px;
-  background-color: #e0ab0d;
-  color: black;
-  min-height: 400px;
-  width: 100%;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 5%;
+  
+  /* BACKGROUND IMAGE */
+  background: url('bluesky.jpg') no-repeat center center/cover;
 }
 
-.second-content h1 {
-  margin-bottom: 40px;
-  font-size: 28px;
+/* Optional dark overlay for better text visibility */
+.second-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Make content appear above overlay */
+.logo-side,
+.content-side {
+  position: relative;
+  z-index: 2;
+}
+
+/* Logo */
+.spinning-logo {
+  width: 180px;
+  height: 180px;
+  animation: spin 20s linear infinite;
+}
+
+/* Layout */
+.content-side {
+  flex: 1;
 }
 
 .second-image {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  align-items: start;
-  position: relative;
+  display: flex;
+  gap: 20px;
 }
 
-.second-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain;
-  grid-column: 1;
+.shivaimg {
+  width: 200px;
+  border-radius: 10px;
 }
 
-.second-image p {
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: left;
-  grid-column: 2;
-  margin: 5px 0 0 20px;
-  padding-top: 100px;
-  padding-right: 20px;
-  position: relative;
-  left: 20px;
+/* Spin Animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-@media screen and (max-width: 768px) {
+/* Mobile */
+@media (max-width: 768px) {
   .second-content {
-    padding: 20px 15px;
-  }
-
-  .second-content h1 {
-    font-size: 22px;
-    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .second-image {
-    grid-template-columns: 100px 1fr;
-    gap: 15px;
-    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .second-image img {
-    width: 100px;
-    height: auto;
-  }
-
-  .second-image p {
-    font-size: 14px;
-    line-height: 1.5;
-    padding-right: 5px;
-  }
+}
 }
 
 .card-container {
@@ -1677,6 +1671,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
