@@ -1648,8 +1648,8 @@ h5 {
 
 /* SPINNING LOGO */
 .spinning-logo{
-  width:220px;
-  height:220px;
+  width:300px;
+  height:300px;
   animation:spin 20s linear infinite;
 }
 
@@ -1695,5 +1695,6 @@ h5 {
     margin-bottom:30px;
   }
 }
+
 
 
