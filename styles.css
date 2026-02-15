@@ -635,10 +635,11 @@ footer {
 
 /* Logo */
 .spinning-logo {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
+  display: block;
   animation: spin 20s linear infinite;
-  display: block; /* IMPORTANT */
+  transform-origin: center center;
 }
 
 /* Layout */
@@ -658,8 +659,12 @@ footer {
 
 /* Spin Animation */
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Mobile */
@@ -1685,6 +1690,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
