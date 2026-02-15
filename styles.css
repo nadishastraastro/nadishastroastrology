@@ -628,6 +628,7 @@ footer {
   width: 180px;
   height: 180px;
   animation: spin 20s linear infinite;
+  display: block; /* IMPORTANT */
 }
 
 /* Layout */
@@ -1674,6 +1675,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
