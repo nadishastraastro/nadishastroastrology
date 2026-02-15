@@ -598,6 +598,7 @@ footer {
   position: relative;
   display: flex;
   align-items: center;
+   align-items: center; /* vertical center */
   gap: 40px;
   padding: 80px 5%;
   
@@ -608,6 +609,12 @@ footer {
   background-repeat: no-repeat;  /* prevents repeating */
 }
 
+.second-content p {
+  color: #ffffff;
+  line-height: 1.8;       /* space between lines */
+  letter-spacing: 0.5px;  /* space between letters */
+  font-size: 16px;
+}
 /* Optional dark overlay for better text visibility */
 .second-content::before {
   content: "";
@@ -621,6 +628,9 @@ footer {
 .content-side {
   position: relative;
   z-index: 2;
+   display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center inside */
 }
 
 /* Logo */
@@ -1675,6 +1685,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
