@@ -602,7 +602,10 @@ footer {
   padding: 80px 5%;
   
   /* BACKGROUND IMAGE */
-  background: url('bluesky.jpg') no-repeat center center/cover;
+  background: url('bluesky.jpg');
+  background-size: cover;        /* makes it fill completely */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* prevents repeating */
 }
 
 /* Optional dark overlay for better text visibility */
@@ -1671,6 +1674,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
