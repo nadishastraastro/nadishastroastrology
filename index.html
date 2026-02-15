@@ -88,6 +88,98 @@
 }
 </script>
 
+
+  <style>
+
+/* SECTION WITH BACKGROUND */
+.second-content{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:60px;
+  padding:60px 8%;
+  position:relative;
+
+  background:url('/bluesky.jpg') no-repeat center center;
+  background-size:cover;
+}
+
+/* DARK OVERLAY */
+.second-content::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+  z-index:1;
+}
+
+/* MAKE CONTENT ABOVE OVERLAY */
+.logo-side,
+.content-side{
+  position:relative;
+  z-index:2;
+}
+
+/* LEFT LOGO */
+.logo-side{
+  flex:0 0 250px;
+  display:flex;
+  justify-content:center;
+}
+
+/* SPINNING LOGO */
+.spinning-logo{
+  width:220px;
+  height:220px;
+  animation:spin 20s linear infinite;
+}
+
+/* ROTATION */
+@keyframes spin{
+  from{ transform:rotate(0deg); }
+  to{ transform:rotate(360deg); }
+}
+
+/* RIGHT CONTENT */
+.content-side{
+  flex:1;
+  max-width:700px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+/* HEADING */
+.content-side h2{
+  font-size:32px;
+  margin-bottom:20px;
+  color:#ffffff;
+  letter-spacing:1px;
+}
+
+/* PARAGRAPH */
+.content-side p{
+  color:#ffffff;
+  font-size:17px;
+  line-height:1.9;
+  letter-spacing:0.6px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .second-content{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .logo-side{
+    margin-bottom:30px;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
@@ -175,24 +267,22 @@
 
  <div class="second-content">
 
-    <div class="logo-side">
-        <img src="logo.webp" alt="Logo" class="spinning-logo">
-    </div>
+  <div class="logo-side">
+    <img src="/images/zodiaclogo.png" alt="Zodiac Logo" class="spinning-logo">
+  </div>
 
-    <div class="content-side">
-       <center> <h2>Accurate Nadi Astrology Insights for Life Guidance</h2> </center>
+  <div class="content-side">
+    <h2>Accurate Nadi Astrology Insights for Life Guidance</h2>
 
-        <div class="second-image">
-            <img src="/zodiaclogo.png"
-                 loading="lazy"
-                 alt="zodiac"
-                 class="shivaimg">
-
-            <p>
-                >Nadi Shastram is a sacred and time-honored branch of Vedic astrology rooted in ancient Indian wisdom. It is based on mystical palm leaf manuscripts written by revered sages who possessed divine insight into human destiny. These manuscripts are said to contain detailed life predictions of individuals who are destined to discover them. Unlike conventional astrology that depends primarily on planetary charts and birth details, Nadi Shastram identifies a person’s specific leaf through their thumb impression, making the process uniquely personal and precise. For centuries, this profound system has guided seekers toward understanding their past karma, present challenges, and future possibilities with spiritual clarity and purpose.
-            </p>
-        </div>
-    </div>
+    <p>
+      Nadi Shastram is a sacred and time-honored branch of Vedic astrology rooted in ancient Indian wisdom.
+      It is based on mystical palm leaf manuscripts written by revered sages who possessed divine insight
+      into human destiny. These manuscripts are said to contain detailed life predictions of individuals
+      who are destined to discover them. Unlike conventional astrology that depends primarily on planetary
+      charts and birth details, Nadi Shastram identifies a person’s specific leaf through their thumb
+      impression, making the process uniquely personal and precise.
+    </p>
+  </div>
 
 </div>
 
@@ -632,6 +722,7 @@ At Mypalmleaf, we specialize in locating these manuscripts for you, conducting o
   </style>
 </body>
 </html>
+
 
 
 
