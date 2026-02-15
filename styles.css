@@ -592,95 +592,7 @@ footer {
   margin-top: 10px;
 }
 
-  /* Second content */
-
-.second-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-   align-items: center; /* vertical center */
-  gap: 40px;
-  padding: 80px 5%;
-  
-  /* BACKGROUND IMAGE */
-  background: url('bluesky.jpg');
-  background-size: cover;        /* makes it fill completely */
-  background-position: center;   /* keeps image centered */
-  background-repeat: no-repeat;  /* prevents repeating */
-}
-
-.second-content p {
-  color: #ffffff;
-  line-height: 1.8;       /* space between lines */
-  letter-spacing: 0.5px;  /* space between letters */
-  font-size: 16px;
-}
-/* Optional dark overlay for better text visibility */
-.second-content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-/* Make content appear above overlay */
-.logo-side,
-.content-side {
-  position: relative;
-  z-index: 2;
-   display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical center inside */
-}
-
-/* Logo */
-.spinning-logo {
-  width: 220px;
-  height: 220px;
-  display: block;
-  animation: spin 20s linear infinite;
-  transform-origin: center center;
-}
-
-/* Layout */
-.content-side {
-  flex: 1;
-}
-
-.second-image {
-  display: flex;
-  gap: 20px;
-}
-
-.shivaimg {
-  width: 200px;
-  border-radius: 10px;
-}
-
-/* Spin Animation */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .second-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .second-image {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-}
-
+ 
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1690,6 +1602,7 @@ h5 {
     max-width: 100%;
   }
 }
+
 
 
 
