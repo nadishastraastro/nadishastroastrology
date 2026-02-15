@@ -89,96 +89,7 @@
 </script>
 
 
-  <style>
 
-/* SECTION WITH BACKGROUND */
-.second-content{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:60px;
-  padding:60px 8%;
-  position:relative;
-
-  background:url('/bluesky.jpg') no-repeat center center;
-  background-size:cover;
-}
-
-/* DARK OVERLAY */
-.second-content::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:rgba(0,0,0,0.65);
-  z-index:1;
-}
-
-/* MAKE CONTENT ABOVE OVERLAY */
-.logo-side,
-.content-side{
-  position:relative;
-  z-index:2;
-}
-
-/* LEFT LOGO */
-.logo-side{
-  flex:0 0 250px;
-  display:flex;
-  justify-content:center;
-}
-
-/* SPINNING LOGO */
-.spinning-logo{
-  width:220px;
-  height:220px;
-  animation:spin 20s linear infinite;
-}
-
-/* ROTATION */
-@keyframes spin{
-  from{ transform:rotate(0deg); }
-  to{ transform:rotate(360deg); }
-}
-
-/* RIGHT CONTENT */
-.content-side{
-  flex:1;
-  max-width:700px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
-
-/* HEADING */
-.content-side h2{
-  font-size:32px;
-  margin-bottom:20px;
-  color:#ffffff;
-  letter-spacing:1px;
-}
-
-/* PARAGRAPH */
-.content-side p{
-  color:#ffffff;
-  font-size:17px;
-  line-height:1.9;
-  letter-spacing:0.6px;
-}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .second-content{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .logo-side{
-    margin-bottom:30px;
-  }
-}
-
-</style>
 
 </head>
 
@@ -722,6 +633,7 @@ At Mypalmleaf, we specialize in locating these manuscripts for you, conducting o
   </style>
 </body>
 </html>
+
 
 
 
