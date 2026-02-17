@@ -1126,7 +1126,7 @@ h5 {
 
 .contact-image img {
   max-width: 100%;
-  height: auto;
+  max-height: 250px ;
   border-radius: 10px;
 }
 
@@ -1695,6 +1695,7 @@ h5 {
     margin-bottom:30px;
   }
 }
+
 
 
 
