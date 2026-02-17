@@ -1697,26 +1697,3 @@ h5 {
 }
 
 
-/* float fix */
-
-html, body {
-  transform: none !important;
-}
-
-body {
-  position: relative;
-}
-
-.floating-buttons {
-  position: fixed !important;
-  right: 20px;
-  bottom: 20px;
-  z-index: 99999 !important;
-}
-
-body, html, main {
-  transform: none !important;
-}
-
-
-
