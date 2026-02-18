@@ -1619,7 +1619,7 @@ h5 {
   padding:60px 8%;
   position:relative;
 
-  background:url('/bluesky.webp') no-repeat center center;
+  background:url('/images/bluesky.webp') no-repeat center center;
   background-size:cover;
 }
 
@@ -1695,5 +1695,6 @@ h5 {
     margin-bottom:30px;
   }
 }
+
 
 
