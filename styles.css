@@ -772,6 +772,7 @@ h5 {
 
 .seventhpart {
   background-color: #4B2AC7;
+  padding-bottom: 60px;
   padding: 80px 20px;
   text-align: center;
   color: white;
@@ -828,7 +829,7 @@ h5 {
 
 .eighthpart {
   background-color: #f8f8f8;
-  padding-top: 60px;
+  
   padding: 60px 30px;
   text-align: center;
   font-family: 'Arial', sans-serif;
@@ -1696,6 +1697,7 @@ h5 {
     margin-bottom:30px;
   }
 }
+
 
 
 
