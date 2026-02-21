@@ -1701,7 +1701,11 @@ h5 {
 }
 
 
-
+.tenthhpart p {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+}
 
 
 
