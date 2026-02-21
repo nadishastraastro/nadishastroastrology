@@ -478,9 +478,6 @@ footer {
   height: auto;
   object-fit: contain;
 
-  
-  width: 100%;
-  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -1702,6 +1699,7 @@ h5 {
     margin-bottom:30px;
   }
 }
+
 
 
 
