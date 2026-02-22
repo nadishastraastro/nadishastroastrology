@@ -1710,12 +1710,22 @@ h5 {
 
 
 
-.marmatch {
-  display: block; /* Changes the image from inline to block-level */
-  margin-left: auto; /* Distributes available space equally on the left */
-  margin-right: auto; /* Distributes available space equally on the right */
-  width: 50%; /* Optional: Set a specific width, must be less than 100% for auto margins to work */
+/* Center image for PC and Mobile */
+.contimg {
+    display: block;
+    margin: 20px auto;   /* Centers horizontally */
+    max-width: 100%;     /* Makes it responsive */
+    height: auto;        /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: smooth corners */
 }
+
+/* Optional: control image width on desktop */
+@media (min-width: 768px) {
+    .contimg {
+        max-width: 600px;  /* Adjust size for PC */
+    }
+}
+
 
 
 
