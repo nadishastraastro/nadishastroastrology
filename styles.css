@@ -1710,6 +1710,12 @@ h5 {
 
 
 
+.marmatch {
+  display: block; /* Changes the image from inline to block-level */
+  margin-left: auto; /* Distributes available space equally on the left */
+  margin-right: auto; /* Distributes available space equally on the right */
+  width: 50%; /* Optional: Set a specific width, must be less than 100% for auto margins to work */
+}
 
 
 
