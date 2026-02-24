@@ -498,7 +498,7 @@ footer {
 .image-btn {
   padding: 14px 28px;
   font-size: 16px;
-  background-color: #03a83a;
+  background-color: maroon;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -608,6 +608,7 @@ footer {
 
 .card {
   background-color: maroon;
+  color: #ffffff;   /* White text */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px 15px;
@@ -1725,6 +1726,7 @@ h5 {
         max-width: 600px;  /* Adjust size for PC */
     }
 }
+
 
 
 
